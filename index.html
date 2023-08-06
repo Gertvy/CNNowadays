@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>语录展示网站</title>
+  <style>
+    /* CSS 代码 */
+    .quote-container {
+      font-family: "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols", sans-serif;
+      font-variant: emoji; /* 这个属性非常重要，确保显示emoji */
+      max-width: 400px;
+      margin: 20px auto;
+      position: relative;
+    }
+    
+    .quote-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px;
+      border-color: transparent #000 transparent transparent;
+    }
+    
+    .quote-content {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .center{
+     text-shadow: #000;
+     text-align:center;
+    }
+
+    .copy-button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="center"><h3>金句</h3></div>
+  <div class="center">这里收集了大量讽刺、反串以及名人金句语录 玻璃心患者请离开</div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">《过零丁洋》<br>
+        辛苦遭逢起一经，百年奋进似红星。<br>
+        ​山河锦​绣谱新章，黎明昂首赴前程。<br>
+        惶恐滩头不惶恐，零丁洋里怎零丁?<br>
+        人生自古谁敢死，奉献终生为复兴。​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(0)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">人人都向往的地方，<br>
+        不是天堂，也是食堂；<br>
+        人人都逃离的地方，<br>
+        不是地狱，也是监狱。<br>
+        现实的世界，<br>
+        如果允许人类自由迁徒，<br>
+        那么人流的方向，<br>
+        就是文明的方向。​</p>
+      <footer>- 哈耶​克​</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(1)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">我认为空气​辱华了，为什么空气在被我们呼吸的时候需要我们主动去吸，想象一下如果没有五千年历史的积淀今天空气都没有被我们吸的机会，可以说是我们让空气有了 自己的价值，空气应该感恩我们才是，而今天我们每呼吸一次就会浪费一次呼吸的能量，我气抖冷，空气应该自己主动进到我们的肺泡里来感恩我们才是，为什么给了空气 存在价值的我们要主动费力气的去吸空气呢，可以说空气不尊重我们的历史文化。 ​​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(2)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">“许多文艺工作者由于自己脱离群众、生活空虚，当然也就不熟悉人民的语言，因此他们的作品不但显得语言无味，而且里面常常夹着一些生造出来的和人民的语言相对立的不三不四的词句。”​</p>
+      <footer>- 毛泽东</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(3)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">几个月前：大家要脱下​孔乙​己的长衫，不用追求理想，什么工作都能干<br>
+        几个月后：大家要有理想，不要用好找工作的标准选专业​。​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(4)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">敌人越是反对 越是说明我们作对了 敌人都赞同我们 说明真的做对了 敌人都不好评价 说明然敌人摸不着头脑 还是我们作对了 所以 只要有敌人 我们所作所为就是对​​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(5)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">最坏的和平强过最好的战争，​以土地换和平不香​吗？ 万恶的丑国就知道拱火。​​。​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(6)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">古人​云：其身正，不令而行，其身不正，虽令不从。​​</p>
+      <footer>- </footer>
+    </div>
+    <button class="copy-button" onclick="copyText(7)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">对于霓虹 我们说：忘记历史是耻辱<br>
+        对于大鹅 我们说：纠结历史是无用<br>
+        对于东亚第一大国 我们说：了解历史是犯罪​​​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(8)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">感觉是美国资本犹太盎撒共济会光照会的军工综合体美联储fbi cia转基因去雄化亡我之心不死阴谋财阀白左气象武器凯乐奇计划​奶头​乐殖民外星人印第安堕落民粹货币战争罗斯柴尔德的阴谋​​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(9)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">最佳国家第一名 🇨🇳<br>
+        传统传承最好的国家 🇦🇫<br>
+        对女性最友好的国家 🇮🇷🇦🇫<br>
+        最适合独自旅行 🇰🇵<br>
+        最适合抚养子女 🇨🇳<br>
+        最适合​冒险家免​签 🇨🇳​​​​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(10)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">你说得对，但是你说的也不完全对。从某种角度来说，你说的有一点对，可是从另一个角度看，你说得不对。也不能说是完全不对，只能说离完全对之间还有一点不对。如果忽略这点不对，哪你说的当然是对的，可是以一个更严谨的态度去审视你说的对不对，那么你说的又不是对的了。其实回头一想，你说的对之处在静止的世界中有可能是对的，你说的不对之处以形而上的观点来看有可能是错的。但是以发展的眼光看，你说得对之处在运动的时空里有可能是不对的，你说的不对之处以辩证的观点看有可能是对的。在此时此刻你说的有可能对也有可能不对，在往后未来你说的有可能不对也有可能对。总而言之，言而总之，一言以蔽之，观其全貌后论之，知其今后历来往事所以评议之，你说得对，但是你说的不对。你说得对，但是你说的也不完全对。从某种角度来说，你说的有一点对，可是从另一个角度看，你说得不对。也不能说是完全不对，只能说离完全对之间还有一点不对。如果忽略这点不对，哪你说的当然是对的，可是以一个更严谨的态度去审视你说的对不对，那么你说的又不是对的了。其实回头一想，你说的对之处在静止的世界中有可能是对的，你说的不对之处以形而上的观点来看有可能是错的</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(11)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">俄罗斯这一仗，​打废了乌克​兰，打傻了日本，打残了北约，打懵了美国，打醒了欧盟，打得联合国不敢说话了，打黄了股市，打涨了欧美物价，打出了真理，打出了威风，打出了人道主义战争，打出了冠状病毒的来源，打出了一个真正的硬汉，这样霸气的普京你们支持他吗？​​​</p>
+      <footer>- 某抽象主持人</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(12)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">所有的​戰爭宣​傳，所有的叫囂、謊言和仇恨，都來自那些不上戰場的人​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(13)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">年龄，是未成年的<br>
+        学历，是初中以下的<br>
+        学习，是不及格的<br>
+        智商，是90以下的<br>
+        猴子程度，是80%的<br>
+        进厂，是必然的<br>
+        口嗨，是比慈禧还慈禧的​​​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(14)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">你们恶搞懂王的时候想过不干涉他国内政吗？[给心心]<br>
+        说你是精俄你又不高兴，实际上你是不是你自己最清楚​​​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(15)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">今年高考中，我使用道具“北京户口”，战胜了全国90%的人，快来看看吧！​​​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(16)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">🤓🤏中国人认为宇宙万法的那个源头，它是什么？🌍☀️它是如如。对吧，所以这个词儿叫如来。🫨我见到如来这次有秘密，如来如rr来了吗？（战术后撤）如来吗？😬他真来了吗？女口来，​到底来没​来？🐔女口来，我说如来。（突然激动）他真来了吗？😙女口来。😫你看看，😠来没来？😌女口来。😆他很厉害！🤓👐他不是一个有形的所以你读心经，🫳🤓👆心经里面讲啊，什么官司在博大精深，般若波罗蜜多时照见五蕴皆空😙。☝️🤓注意不生不灭☝️不垢不净☝️不增不减，如如不动。😙🤌所以万物生于有有生于无，是这样说滴吧。😠🤚他不是个实体！​​​</p>
+      <footer>- 郭继承</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(17)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">神助拳　义和团😡👊🏻　只因鬼子闹中原　劝奉教　自信天<br>
+        不信神　忘祖仙　男无伦　女行奸　鬼孩不是人所产<br>
+        如不信　仔细观　鬼子眼珠俱发蓝👱🏻　天无雨　地焦黑<br>
+        全是教堂遮住天　神发怒😡　仙发怒😡　一同下山把道传😡🪄<br>
+        非是邪　非白莲　念咒语　法箴言　升黄表　敬香烟<br>
+        请下各洞诸神仙　仙出洞　神下山　附着人体把拳传<br>
+        兵法艺　都学全😎🪡　安平鬼子不费难　挑铁路　拔线杆<br>
+        海中去翻火轮船🛳　大法国🇫🇷　心胆寒🥶　英🇬🇧美🇺🇸俄🇷🇺德🇩🇪哭连连😭👐🏻😭👐🏻<br>
+        洋鬼子　尽除完　大清一统靖江山😭👑​​​</p>
+      <footer>- </footer>
+    </div>
+    <button class="copy-button" onclick="copyText(18)">复制</button>
+  </div>
+  <div class="quote-container">
+    <div class="quote-content">
+      <p id="quote-text">安禄山进长安－唐完了<br>
+        黄巢进长安－真给他唐完了<br>
+        朱全忠加九赐－全给他唐完了​​​</p>
+      <footer>- B站某网友</footer>
+    </div>
+    <button class="copy-button" onclick="copyText(19)">复制</button>
+  </div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">最近网上阴阳怪气的一批人，已经有​红​客破解了他们后台真实IP，结果显示地址正是提瓦特大陆（当然也是看有网友这样说的，具体哪个大佬破解的我也不知道）请大家一定不要被带偏了，最近机器人水军很多，他们正在逐渐摧毁我们爱国的心，大家要理智，要相信国家，坚决和国家站在一起，永远不离开祖国，相信自己的选择，坚定自己的信仰，坚定信念永不动摇，国家荣誉高于一切。批判不等于背叛，但是批判的前提是热爱和信任，永远不要忘记五星红旗的含义，请坚定的热爱下去！​      ​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(20)">复制</button>
+</div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">批评不自由 赞美无意义​。​​</p>
+    <footer>- </footer>
+  </div>
+  <button class="copy-button" onclick="copyText(21)">复制</button>
+</div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">高压锅不给留排气阀，迟早要爆​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(22)">复制</button>
+</div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">美国不仅自己不自信，还很喜欢把自信挂在墙上，还在嘴里，并说别人不自信，还坏事做尽，各种捂嘴​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(23)">复制</button>
+</div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">[脸红]免责声明: <br>
+      1.刚刚洗完碗习惯性玩下手机；<br>
+      2.打开bilibili后手因为沾了水比较湿，水珠不小心在屏幕流动导致显示屏异常进入该视频；<br>
+      3.由于正在擦手中故而忽视正在播放中的视频，从而导致视频播放完，然并不知其中播放内容。<br>
+      4.留言是惯性操作，与其他网友并不相识，也不想与他们的互动，他们的点赞行为纯属个人，并非一种认同的行为。​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(24)">复制</button>
+</div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">在郭老师口中，不努力就是社会的渣子，压力大撑不下去了就是失败者，强词夺理还天天佛说佛说，佛陀会怎么说，佛陀看到失去希望即将离去的人只会告诉他们，无常即苦是常态，但应该试着接受，真理需要亲历验证，而不是人云亦云，修行常在远山丛林，但更在于你的心​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(25)">复制</button>
+</div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">国名就叫中华人民共和国，宪法上的“对人民负责，受人民监督”，公安局大门上写的“为人民服务”，结果却说人民有什么资格？我记得言论自由好像是写在宪法里的吧？他能这么嚣张在座的各位都有责任[吃瓜]​不是信息茧房的问题，一个正常人如果被人骗过一次，多少会长点记性，说句不好听就算是个傻子，你连着逗他几次，他下次看到你也知道躲着点，​e​友就不一样了，都被人逗了一年多了，逗他的人还能一如既然的逗他[笑哭]​🐰友一边看到自己被歧视就急，一边歧视别的民族，我只能说是驰名双标了[兔年吉祥東雪蓮_抚摸兔头][兔年吉祥東雪蓮_抚摸兔头]​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(26)">复制</button>
+</div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">经初查，​周某​人（男，汉族，37岁），系发布不实信息者，此人从未有过鲁镇的闲亨酒店从业经历。因对社会不满，利用纸质媒体虚设《呐喊》、《孔乙己》等，虚设地点、人物、姓名，捏造编写了“怒怼社会，发泄情绪”的书籍文章，并发布在报刊杂志，引发公众热议，造成恶劣影响。<br>
+      周某人故意散布谣言的违法行为严重扰乱了社会公共秩序，已依法对其作出行政拘留，案件仍在进一步侦办之中。​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(27)">复制</button>
+</div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">我英语不好，但我会写United States of America<br>
+      我中文不好，但我知道他读美利坚合众国<br>
+      我数学不好，但我记得380万平方英里<br>
+      我地理不好，但我瞭然地图上的雄鹰<br>
+      我历史不好，但我永远不会忘记1776<br>
+      我忘不了冰雪覆盖的洛基山<br>
+      我忘不了阳光明媚的坦帕湾<br>
+      我忘不了宾夕法尼亚连绵的森林 <br>
+      我忘不了加利福尼亚隽秀的海岸<br>
+      我忘不了巴尔的摩港口的​晨钟暮​鼓​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(28)">复制</button>
+</div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">你说得对，但是科举制度是为了维护封建王朝统一，巩固中央集权的工具，始创于隋朝，结束于清朝，已经随着中国的旧时代和封建社会一起消失在历史中了​
+      ​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(29)">复制</button>
+</div>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(30)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">当你来到这一个国家.，你可以体验一种诡异的感觉，类似于，​丫丫回家​啦，连蒙古的矿工都会高兴地抬起头甚至于前面一些足够好笑的节奏，类似于丫丫在美国被受虐待，可结果发现了官方都出来辟谣了，而且事实也确实就是合约到期，丫丫回家啥事都没发生，没被虐待，属于，当代互联网现状和我们国家的现状，当然，你也可以体验到好好干，日子会越来越甜的，但实际上你工作半年，连薪资都没长你，在努力干，结果你还不如跟别人一起摸鱼，反正工资都​​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(31)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">：这世界真奇怪，有的人吃皮不吃肉，有的人连饭都吃不饱。<br>
+      ：这世界就是这样子，如果你穷，谁都看不起你。<br>
+      ：穷人又没有做坏事。<br>
+      ：可是满街的乞丐会影响市容的啊​​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(32)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">恩格斯在《英国工人阶级状况》中这样说道，当大多数人都做小贩，不是小饭中年事件簿的小饭哈，特别是在星期六的晚上，当所有的工人居民都跑去街头的时候，就可以看出以此为生的人是如何的多。无数的男人，女人和小孩争先恐后地叫卖鞋带，背带，橘子，饼干以及各种各样的小东西。就是在其余的时候，也随时都可以碰到这种叫卖橘子，饼干，姜啤水和荨麻啤酒的小贩在街边站着或者徘徊着。这些人卖的东西也有火柴以及类似的东西，如火漆，有专卖权的引火用的混合剂等等。恩格斯在本章认为，注意我说的是恩格斯认为哈，打发失业者上街摆摊是政府极端无能的表现，因为它通常都是两个方面的因素引起的<br>
+      1.政府不愿意为失业者提供公共部门的职务<br>
+      2.政府执意维持高强度的竞争。而结果就是在制造了大量失业者的同时，也对其他劳动者完成了极端的压榨。政府情愿让一些人在办公室累死，另一些人在街上饿死，也不愿意通过牺牲自己利益的代价进行市场调控。​​​​</p>
+    <footer>- </footer>
+  </div>
+  <button class="copy-button" onclick="copyText(33)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">如果我真的能换成50万，那么请拿这些钱给真正有需要 帮助的底层朋友。​​​</p>
+    <footer>- 转自一位​口吧吧​友​
+    </footer>
+  </div>
+  <button class="copy-button" onclick="copyText(34)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">很喜欢东方曜的大招：两级反转​
+      ​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(35)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">一只出生在天上飞可以落地，不知道被埋地下的几十跳人命能不能爬出来​​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(36)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">盎撒给大清的赔款利率低于贵国现在的房贷利率​​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(37)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">
+      永远眼含热泪，<br>
+      永远怀揣愤怒，<br>
+      永远被人利用，<br>
+      永远不长记性。​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(38)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">一问文化五千​年  一说科技刚起步  一问经济说总量  一提工资讲平均  网上一说就闪评  日子确实好  生活确实甜​​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(39)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">《超级敏感》是乐华娱乐旗下虚拟偶像团体A-SOUL发布的第二支团曲，发布于2021年4月30日，并于2021年5月6日收录于专辑《超级敏感》。此曲由Johnny Chao、​黄​柏勋作曲，赖宛均作词、向晚、贝拉、珈乐、嘉然、乃琳演唱。​</p>
+    <footer>- 百度百科</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(40)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">😋​在他起来扶车的瞬间，我在他眼睛里看到了光，这就是​社会运转的底层逻​辑​​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(41)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">如果一个人完全不侮辱对方，那么他就是在侮辱对方，因为他知道规避所有侮辱的点，这就已经是一种侮辱了​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(42)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">🎵​超级的敏​感，全与你有关🎵​​</p>
+    <footer>- 《超级敏感》歌词</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(43)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">如果一个外国人没有​乳​花 可以证明这个外国人对乳花的所有点都铭记于心 所以这个外国人也算得上乳了​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(44)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">还不是​陈胜吴​广不够努力。看来孙先生也是自己不行怨环境呢，哈哈😄​​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(45)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">鲁迅自己不行就怪社会，鉴定为妥妥的50万​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(46)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">我是“撅醒”不是觉醒，你们别再这么指责我了😭😭我寒窗苦读几十年，就想熬出头来给我爸妈享清福，最后找个五六千的工作，工作这么久连自己出生到现在的学费都还不完，全是我的错，都是我不够努力😭😭😭都是我不够加班，绝对不是老板不给加班费，绝对不是音乐公司招人要格莱美奖😭😭😭绝对不是那血浓于水的关系熔断了我一直奋发向上却又脆弱的脊梁。<br>
+      都是我不够努力😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭​​​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(47)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">洋务运动失败的原​因 ： （ 1） 洋务运动具有封建性。洋务运动的指导思想是 “中学为体”“西学为用”，洋务派企图在不改变中国固有的制度与道德的前提下，以吸取西方近代生产技术为手段，来达到维护和巩固中国封建统治的目的，这就严重限制了洋务运动的发展 ；（ 2） 洋务企业的管理具有腐朽性。洋务企业虽然具有一定的资本主义性质，但其管理 却 是封建式的，企业内部充斥着营私舞弊、贪污中饱、挥霍浪费等腐败现象。 失败的教训： 地主阶级不能担负起中国近代化的历史重任。（3）洋务运动失败的根本原因是没有触动封建制度，只要求引进西方先进的科学技术来维护清朝统治，因而注定会失败​​</p>
+    <footer>- </footer>
+  </div>
+  <button class="copy-button" onclick="copyText(48)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">
+      29日，齐齐哈尔市第三十四中学校于微信公众号发布了一篇89字的悼文，被网民批评娇柔操作、文过饰非，例如悼文写道“七天来，痛揉碎了星河，化作繁星，化作皓月，化作你们的模样.....”有网友批评“我们只想知道是什么揉碎了房顶，又是什么揉碎了人性”。​</p>
+    <footer>- 摘自中国数字时代7.30文章</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(49)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">一个自诩5000年智慧的文明，在和自己没什么关系两国战争之中，居然做到了这么可笑可悲的地步 啧啧 笑话都比这个好笑​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(50)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(51)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(52)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(53)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(54)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(55)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(56)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(57)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(58)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(59)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(60)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(61)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(62)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(63)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(64)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(65)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(66)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(67)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(68)">复制</button>
+</div>
+<div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(69)">复制</button>
+</div><div class="quote-container">
+  <div class="quote-content">
+    <p id="quote-text">不问苍生问出生​​​</p>
+    <footer>- B站某网友</footer>
+  </div>
+  <button class="copy-button" onclick="copyText(70)">复制</button>
+</div>
+
+  <script>
+    // JavaScript 代码
+    function copyText(index) {
+      var quoteText = document.getElementsByClassName("quote-content")[index].getElementsByTagName("p")[0].innerText;
+      var tempInput = document.createElement("input");
+      document.body.appendChild(tempInput);
+      tempInput.value = quoteText;
+      tempInput.select();
+      tempInput.setSelectionRange(0, 99999); // 兼容移动设备
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+      alert("文本已复制！");
+    }
+  </script>
+</body>
+</html>
